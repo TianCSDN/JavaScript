@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>biaoda1</title>
+</head>
+<body>
+     <script type="text/javascript">
+     	function checkYear()
+     	  {
+     		var txtYearObj=document.all.txtYear;
+     		var txtYear=txtYearObj.value;
+     
+
+     		if((txtYear==null)||(txtYear.lenfth<=1)||(txtYear<=0))
+            {
+            	window.alert("请输入正确的年份！")
+     			txtYearObj.focus();
+     			return;
+            }
+     			
+
+     		if (isNaN(txtYear))
+     		 {
+     		 	window.alert("请输入整数类型的年份！")
+     		 	txtYearObj.focus();
+     		 	return;   		 
+     		 }
+     	
+     	if (isLeapYear(txtYear))
+     		window.alert(txtYear+"是闰年");
+     	else
+     		window.alert(txtYear+"不是闰年");
+     }
+     function isLeapYear(Year)
+     {
+     	if ((Year%100==0) && (Year%400==0))
+     		return true;
+     	if (Year%4==0)return true;
+     	return false;
+     }
+     </script>
+
+     <formd action="#" name="frmYear">
+     请输入您所检查的年份！
+     <input type="text" name="txtYear">
+     <p>单击检测按钮进行检测！
+     	<input type="button" value="检查" onclick="checkYear()">
+      
+</body>
+</html>
