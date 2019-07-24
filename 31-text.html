@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jisuanji</title>
+	<style type="text/css">
+		
+		section
+		{
+			background-color:#C9e495;
+			width: 260px;
+			height: 380px;
+			text-align: center;
+			padding-top: 1px;
+		}
+
+		.textBaroder 
+		{
+            border-width: 1px;
+            border-style: solid;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function compute(op)
+		{
+			var num1,num2;
+			num1 = parseFloat(document.myform.txtNum1.value);
+			num2 = parseFloat(document.myform.txtNum2.value);
+
+			if (op == "+") 
+				document.myform.txtResult.value=num1 + num2;
+
+			if (op == '-') 
+				document.myform.txtResult.value=num1 - num2;
+			if (op == '*')
+				document.myform.txtResult.value=num1 * num2;
+			if (op == '/' && num2 !=0) 
+				document.myform.txtResult.value=num1 / num2;
+		}
+	</script>
+		
+		
+	
+</head>
+<body>
+	<section>
+		<h1><img src="tim.jpg"  width="240"  height="31">欢迎您来到淘宝！</h1>
+		<form action="" method="post" name="myform" id="myform">
+			<h3><img src="timg.jpg" width="54" height="20">购物简易计算器！</h3>
+			<p>第一个数值<input type="text" name="txtNum1" size="25" class="textBaroder" id="txtNum1"></p>
+			<p>第二个数值<input type="txt" name="txtNum2" size="25" class="textBaroder" id="txtNum2"></p>
+
+
+			<p>
+				<input type="button" name="add" id="add" value="+" onclick="compute('+')" >
+                <input type="button" name="sub" id="sub" value="-" onclick="compute('-')" >
+                <input type="button" name="mul" id="mul" value="*" onclick="compute('*')" >
+                <input type="button" name="div" id="div" value="/" onclick="compute('/')" >
+
+                <p>计算结果<input type="text" name="txtResult" class="textBaroder" id="txtResult" size="25"></p>
+			</p>
+		</form>
+	</section>
+
+
+</body>
+</html>
