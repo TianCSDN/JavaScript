@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test17</title>
+
+
+	  <script type="text/javascript">
+   	function fun1()
+   	{
+         alert("你需要往下看！");
+   	}
+
+   	function fun2()
+   	{
+   		if (confirm("是否跳转到某某某网站"))
+   		{
+   			location.href="http://www.baidu.com";
+   		}
+   		else
+   		{
+   			alert("点击取消 系统返回false");
+   		}
+
+   	}
+
+   	function fun3()
+   	{
+         var name = prompt("请输入您的名字","");
+         if(name)
+         {
+         	alert("Welcome " + name)
+         }
+   	}
+   </script>
+</head>
+<body>
+     <p>有三种对话框</p>
+     <p>NO.1 alert</p>
+     <p>
+     	<input type="submit" name="Submit" value="提交" onclick="fun1()"/>
+     </p>
+
+     <p>NO.2 confirm </p>
+      <p>
+      	<input type="submit" name="Submit2" value="提交" onclick="fun2()"/>
+      </p>
+
+      <p>NO.3 prompt </p>
+      <p>
+      	<input type="submit" name="Submit3" value="提交" onclick="fun3()"/>
+      </p>
+</body>
+</html>
