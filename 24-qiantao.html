@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>qiantao</title>
+	<script type="text/javascript">
+		var str = 123;
+		function add(n1,n2){
+			function innerAdd(){
+				alert("参数的和为:" + (n1+n2+str));
+			}
+			return innerAdd();
+		}
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		add(1,2);
+		
+	</script>
+
+</body>
+</html>
