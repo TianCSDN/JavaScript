@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test18</title>
+
+   <script type="text/javascript">
+   	function countdown()
+   	{
+   		var online = new Date('2018-1-1');
+   		var now = new Date();
+
+   		var leave = online.getTime() - now.getTime();
+   		var day = Math.floor(leave / (1000 * 60 * 60 *24)) + 1;
+   		var title = "距离2018年元旦还有"
+
+   		alert(title + day + "天");
+   	}
+/*
+   		document.write("<br>" + online);
+   		document.write("<br>" + now);
+   		document.write("<br>" + leave);
+   		document.write("<br>" + day);
+   		
+
+   		if (day>1) {
+   			if (document.all) 
+   			{
+   				divId.innerHTML= "<b> ------距" + title + "还有" + day +"天 </b>"
+   			}
+   			else
+   			{
+   				if (day == 1) {
+   					if (document.all) {
+   						divId.innerHTML="<b> ---------明天就是" + title + "</b>";
+   					}
+   				}
+   				else{
+   					if (day == 0) {
+   						divId.innerHTML="<b>------今天就是" + title + "</b>";
+   					}
+   					else{
+   						divId.innerHTML="<br>------" + title +"off </br>";
+   					}
+   				}
+   				}
+   			}
+   		}
+   	}*/
+   	countdown();
+
+   </script>
+   </head>
+<body>
+</body>
+</html>
