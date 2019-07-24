@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test 34</title>
+	<script type="text/javascript">
+		function save()
+		{
+			alert("数据以保存成功！")
+		}
+
+		function del()
+		{
+			alert("数据删除成功")
+		}
+
+		function he1()
+		{
+			alert("F12 获取帮助")
+		}
+
+	</script>
+</head>
+<body>
+	<input type="button" value="保存" onclick="save()">
+	<input type="button" value="删除" ondblclick="del()" >
+	<input type="button" value="帮助" onmousemove="he1()">
+	<input type="button" value="帮助" onmouseout="he1()">
+	<input type="button" value="帮助" onmousedown="he1()">
+	<input type="button" value="帮助" onmouseup="he1()">
+
+	<font onmousemove="this.style.color='red'" onmouseout="this.style.color='green'">hello world!</font>
+
+	<font onmouselect="this.style.color='red'" >hello world!</font>
+</body>
+</html>
