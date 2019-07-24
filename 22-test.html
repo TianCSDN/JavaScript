@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test 22</title>
+	<script type="text/javascript">
+		function isLeapYear(year)
+		{
+			if ((year % 4 == 0 && year % 100 != 0 || year % 400 == 0)) {
+				alert( year + "年是闰年")
+			}
+			else
+			{
+				alert( year + "年是平年")
+			}
+		}
+	</script>
+</head>
+<body>
+    <input type="button" value="count" onclick="isLeapYear(prompt('请输入一个值：'))">
+</body>
+</html>
