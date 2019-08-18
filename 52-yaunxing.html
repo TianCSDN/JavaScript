@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js原型</title>
+	<script type="text/javascript">
+		function Dog(name, age){
+			this.name = name;
+			this.age = age;
+		}
+		Dog.prototype.say = function(){
+               console.log('汪汪汪')
+		}
+		
+		var dog1 = new Dog('二哈',1.5);
+		var dog2 = new Dog('金毛',0.5);
+
+		dog1.say();
+	    dog2.say();
+
+
+	</script>
+</head>
+<body>
+	
+
+</body>
+</html>
