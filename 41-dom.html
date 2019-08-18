@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>className属性</title>
+<style>
+    body{ font-size:16px;}
+    .one{
+        border:1px solid #f66;
+        width:230px;
+        height:50px;
+        background:#5c5;
+        color:red;
+    }
+    .two{
+        border:1px solid #5c5;
+        width:230px;
+        height:50px;
+        background:#9CF;
+        color:blue;
+    }
+    </style>
+</head>
+<body>
+    <p id="p1">添加样式</p>
+    <input type="button" value="添加样式" onclick="add()"/>
+    <p id="p2" class="one">更改外观</p>
+    <input type="button" value="更改外观" onclick="modify()"/>
+ 
+    <script type="text/javascript">
+       function add(){
+          var p1 = document.getElementById("p1");
+          p1.className="one";
+       }
+       function modify(){
+          var p2 = document.getElementById("p2");
+          p2.className="two";
+       }
+    </script>
+</body>
+</html>
