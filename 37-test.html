@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test37</title>
+</head>
+<body>
+	<script type="text/javascript">
+		myArray = new Array(5);
+
+		myArray[0] = "a";
+		myArray[1] = "b";
+		myArray[2] = "c";
+		myArray[3] = "d";
+		myArray[4] = "e";
+
+		for(i = 0 ; i < 5; i++)
+		{
+			document.write(myArray[i] + "<br>");
+		}
+
+
+		myArray = [["a1","a2","a3"],["b1","b2","b3"],["c1","c2","c3"]]
+
+		 for (var i = 0; i <= 2; i++) {
+		 	document.write(myArray[i]);
+		 	document.write("<br>");
+		 }
+
+		 document.write("<hr>");
+
+
+		 for (var i = 0; i < 3; i++) {
+		 	for (var j = 0; j <3; j++) {
+		 		document.write(myArray[i][j]+"<br>")
+		 	}
+		 document.write("<br>")
+		 }
+	</script>
+</body>
+</html>
